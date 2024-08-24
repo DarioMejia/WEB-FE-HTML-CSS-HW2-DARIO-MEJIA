@@ -79,8 +79,52 @@ body {
 
 .aside {
     grid-area: aside;
-    background-color: #fdf8f3;
+    background-image: url('img/back123.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.aside-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.aside-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.aside-content .cta-button {
+    display: inline-block;
+    background-color: #b08968;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.aside-content .cta-button:hover {
+    background-color: #4b3832;
+}
+
+.aside-content blockquote {
     font-size: 1em;
+    font-style: italic;
+    margin-top: 20px;
+    border-left: 3px solid #b08968;
+    padding-left: 10px;
 }
 
 .section1 {
