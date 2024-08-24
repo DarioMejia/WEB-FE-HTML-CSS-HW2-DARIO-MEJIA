@@ -135,13 +135,60 @@ body {
 
 .section2 {
     grid-area: section2;
-    background-color: #fdf8f3;
     font-size: 1em;
+    background-color: #f7e8d8;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.occasion-container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.occasion-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #4b3832;
+    margin-bottom: 40px;
+}
+
+.occasion-list, .recipient-list {
+    margin-bottom: 60px;
+}
+
+.occasion-item, .recipient-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.occasion-item i, .recipient-item i {
+    font-size: 3em;
+    color: #b08968;
+    margin-bottom: 15px;
+}
+
+.occasion-item h3, .recipient-item h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #4b3832;
+    margin-bottom: 10px;
+}
+
+.occasion-item p, .recipient-item p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    color: #4b3832;
+    max-width: 300px;
 }
 
 .section3 {
     grid-area: section3;
-    background-color: #fdf8f3;
     font-size: 1em;
     padding: 60px 20px;
     background-color: #f7f0ea;
