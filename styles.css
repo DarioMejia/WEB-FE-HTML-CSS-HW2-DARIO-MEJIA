@@ -22,7 +22,7 @@ body {
         'aside section2 section3 section3'
         'aside section2 section4 section5'
         'footer footer footer footer';
-    grid-template-columns: 1fr 3fr 3fr 3fr;
+    grid-template-columns: 2fr 3fr 3fr 3fr;
     grid-template-rows: auto 1fr 1fr 1fr auto;
     gap: 20px;
     padding: 20px;
@@ -79,7 +79,7 @@ body {
 
 .aside {
     grid-area: aside;
-    background-image: url('img/back123.jpg');
+    background-image: url('img/back1234.jpg');
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -143,7 +143,111 @@ body {
     grid-area: section3;
     background-color: #fdf8f3;
     font-size: 1em;
+    padding: 60px 20px;
+    background-color: #f7f0ea;
 }
+
+.section3 .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section3 .card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 500px;
+    transition: transform 0.3s;
+}
+
+.section3 .card:hover {
+    transform: translateY(-10px);
+}
+
+.section3 .card-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.section3 .card-content {
+    padding: 30px;
+    text-align: left;
+}
+
+.section3 .card-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: #4b3832;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.section3 .card-content h2 span {
+    display: block;
+    font-size: 0.8em;
+    color: #b08968;
+    margin-top: 5px;
+}
+
+.section3 .card-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #4b3832;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.section3 .card-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.section3 .card-content ul li {
+    font-size: 1em;
+    color: #4b3832;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.section3 .card-content ul li i {
+    color: #b08968;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.section3 .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #b08968;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.section3 .btn:hover {
+    background-color: #4b3832;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .section3 .card {
+        max-width: 100%;
+    }
+    .section3 .card-image {
+        height: 200px;
+    }
+}
+
 
 .section4 {
     grid-area: section4;
